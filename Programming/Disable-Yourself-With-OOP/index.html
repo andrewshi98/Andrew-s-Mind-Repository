@@ -10,7 +10,7 @@
     </p>
 </blockquote>
 <p style="line-height: 1.75em;">
-    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;It has never been easier for people to teach themself programming. Whether you are learning from a popular online tutorial, or the CS textbook of your friend. At some point, learning object-oriented programming will almost be an inevidable part of your journey. It was when you first learned that the three basic fundamentals of OOP: &quot;Encapsulation, Inheritance, and Polymorphism&quot;. The three great, profound ideas that makes everyone&#39;s code better. But the words themself doesn&#39;t make much sense to you, so you were given an example:</span>
+    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;It has never been easier for people to teach themself programming. Whether you are learning from a popular online tutorial or a CS textbook of your friend. At some point, learning object-oriented programming will almost be an inevidable part of your journey. You will be introduced to three basic fundamentals of OOP: &quot;Encapsulation, Inheritance, and Polymorphism&quot;. The three great, profound ideas that makes everyone&#39;s code better. But the words themself doesn&#39;t make much sense to you, so you were given an example:</span>
 </p>
 <blockquote>
     <p style="line-height: 1.75em;">
@@ -30,10 +30,10 @@
     <img src="./img1.jpg"/>
 </p>
 <p style="line-height: 1.75em;">
-    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;This is how the world seduce another individual into the pit hole of OOP. When people need to use special design pattern in order to intergrate the idea of TA into the &quot;university system&quot;, how much potential do you still see in such design principle? Indeed, OOP program is &quot;easy to implement&quot; as it transfer our interpertation of relationship between real world objects directly into the design of program structure. This has guarenteed that any individual with any mental capability to be able to write OOP program. With a fake promise that OOP would work automatically.</span>
+    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;This is how the world seduce another individual into the pit hole of OOP. Indeed, OOP program is &quot;easy to implement&quot; as it transfer our interpertation of relationship between real world objects directly into the design of program structure. This has guarenteed that any individual with any mental capability to be able to write OOP program. With a fake promise that OOP would work automatically.</span>
 </p>
 <p style="line-height: 1.75em;">
-    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;Some might start arguing, &quot;as long as you follow strictly to the OOP design patterns, you would be able to write OOP code with intuitive structure and high reusability.&quot; So here is another example where OOP unexpected bug (Effective Java #16):</span>
+    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp; Not only Inheritance are not as "intuitive" as it seems, OOP's third principle, Polymorphism that ought to maximize code reuseability also fails its role most of the time. Here is another example (from Effective Java #16):</span>
 </p>
 <p style="line-height: 1.75em;">
     <span style="font-family: &quot;times new roman&quot;;"></span>
@@ -57,7 +57,7 @@
     }
 }</pre>
 <p style="line-height: 1.75em;">
-    <span style="font-family:times new roman">But the code won&#39;t work.&nbsp;</span><span style="font-family: &quot;times new roman&quot;;">The error occurs because under super.addAll it adds elements through issuing function call towards add. Based on polymorphism function call towards add will then get transfered into the add function under MyHashSet, therefore allAll will add element twice. This error seemed somewhat obvious, but when the project gets large one can never avoid random problem like that unless he knew every single implementation detail of the project. But wait, isn&#39;t one of the clear advantage that OOP ought to bring us is portability. While in reality as the a project gets larger and larger, people will be forbidden from making changes towards parent class since many unexpected error might occur. This type of code base is also known as the &quot;shit mountain&quot; - all those shit will fall on your head when you try to change its center.</span>
+    <span style="font-family:times new roman">Seems logical, but the code won&#39;t work.&nbsp;</span><span style="font-family: &quot;times new roman&quot;;">The error occurs because super.addAll() adds elements through issuing function call towards add. Based on polymorphism function call towards add will then get transfered into the add function under MyHashSet, therefore allAll will add element twice. This error seemed somewhat obvious, but when the project gets large one can never avoid random problem like that unless he knew every single implementation detail of the project. But wait, isn&#39;t one of the clear advantage that OOP ought to bring us is portability. While in reality as the a project gets larger and larger, people will be forbidden from making changes towards parent class since many unexpected error might occur. This type of code base is also known as the &quot;shit mountain&quot; - all those shit will fall on your head when you try to change its center.</span>
 </p>
 <p style="line-height: 1.75em;">
     <span style="font-family: &quot;times new roman&quot;;"></span>
