@@ -10,7 +10,7 @@
     </p>
 </blockquote>
 <p style="line-height: 1.75em;">
-    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;It has never been easier for people to teach themself programming. Whether you are learning from a popular online tutorial or a CS textbook of your friend. At some point, learning object-oriented programming will almost be an inevidable part of your journey. You will be introduced to three basic fundamentals of OOP: &quot;Encapsulation, Inheritance, and Polymorphism&quot;. The three great, profound ideas that makes everyone&#39;s code better. But the words themself doesn&#39;t make much sense to you, so you were given an example:</span>
+    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;It has never been easier for people to teach themself programming. Whether you are learning from a popular online tutorial or a CS textbook of your friend. At some point, learning object-oriented programming will almost be an inevidable part of your journey. You will be introduced to three basic fundamentals of OOP: &quot;Encapsulation, Inheritance, and Polymorphism&quot; - The three profound ideas that makes everyone&#39;s code better. But the words themself doesn&#39;t make much sense to you, so you were given an example:</span>
 </p>
 <blockquote>
     <p style="line-height: 1.75em;">
@@ -24,7 +24,7 @@
     <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&quot;But what about TA?&quot; some might think. Isn&#39;t TA both a faculty and&nbsp;a student? So I would just have the class TA inherit from both Student and Faculty. Right?</span>
 </p>
 <p style="line-height: 1.75em;">
-    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;Unfortunatly you can&#39;t. But don&#39;t worry! As a beginner coder you yet have much to learn. People have invented design patterns that <strong>solves</strong>&nbsp;<strong>many issues</strong> like this. As you learn more about OOP, you will be capable of solving these problems, and grow as a programmer.................. Right?</span>
+    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;Unfortunatly you can&#39;t. But don&#39;t worry! As a beginner coder you yet have much to learn. People have invented <strong>many</strong> design patterns that solves&nbsp;<strong>many issues</strong> like this. As you learn more about OOP, you will be capable of solving these problems, and grow as a programmer.................. Right?</span>
 </p>
 <p style="text-align: center;">
     <img src="./img1.jpg"/>
@@ -33,7 +33,7 @@
     <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;This is how the world seduce another individual into the pit hole of OOP. Indeed, OOP program is &quot;easy to implement&quot; as it transfer our interpertation of relationship between real world objects directly into the design of program structure. This has guarenteed that any individual with any mental capability to be able to write OOP program. With a fake promise that OOP would work automatically.</span>
 </p>
 <p style="line-height: 1.75em;">
-    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp; Not only Inheritance are not as "intuitive" as it seems, OOP's third principle, Polymorphism that ought to maximize code reuseability also fails its role most of the time. Here is another example (from Effective Java #16):</span>
+    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp; Not only Inheritance are not as &quot;intuitive&quot; as it seems, OOP&#39;s third principle, Polymorphism that ought to maximize code reuseability also fails its role most of the time. Just like shown below (from Effective Java #16):</span>
 </p>
 <p style="line-height: 1.75em;">
     <span style="font-family: &quot;times new roman&quot;;"></span>
@@ -57,15 +57,18 @@
     }
 }</pre>
 <p style="line-height: 1.75em;">
-    <span style="font-family:times new roman">Seems logical, but the code won&#39;t work.&nbsp;</span><span style="font-family: &quot;times new roman&quot;;">The error occurs because super.addAll() adds elements through issuing function call towards add. Based on polymorphism function call towards add will then get transfered into the add function under MyHashSet, therefore allAll will add element twice. This error seemed somewhat obvious, but when the project gets large one can never avoid random problem like that unless he knew every single implementation detail of the project. But wait, isn&#39;t one of the clear advantage that OOP ought to bring us is portability. While in reality as the a project gets larger and larger, people will be forbidden from making changes towards parent class since many unexpected error might occur. This type of code base is also known as the &quot;shit mountain&quot; - all those shit will fall on your head when you try to change its center.</span>
+    <span style="font-family:times new roman">&nbsp;&nbsp;&nbsp;&nbsp;Seems logical, but the code won&#39;t work.&nbsp;</span><span style="font-family: &quot;times new roman&quot;;">This is because super.addAll() adds elements through issuing function call towards add. Based on polymorphism function call towards add will then get transfered into the add function under MyHashSet, therefore allAll will add element twice. This error seemed somewhat obvious, but when the project gets large one can never avoid random problem like that unless he knew every single implementation detail of the project. But wait, isn&#39;t one of the clear advantage that OOP ought to bring us is portability. While in reality as the a project gets larger and larger, people will be forbidden from making changes towards parent class since many unexpected error might occur. This type of code base is also known as the &quot;shit mountain&quot; - all those shit will fall on your head when you try to reach towards its center.</span>
 </p>
 <p style="line-height: 1.75em;">
-    <span style="font-family: &quot;times new roman&quot;;"></span>
+    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;Aside from those examples which OOP fails to behave properly, the root cause of those problems is because the &quot;is-a&quot; and &quot;has-a&quot; bullshit that OOP classes teach their student. In OOP, inheritance should only be used as a way to <strong>avoid programmer to write two chunks of exact same code twice</strong>. While in most OOP tutorial it was being described as a way to demonstrate logical/functional relationship between two real world object.</span>
 </p>
 <hr/>
 <h2 style="line-height: 1.75em; text-align: center;">
-    <span style="font-family: &quot;times new roman&quot;; font-size: 18px;">But What Do I Do Without OOP?</span>
+    <span style="font-family: &quot;times new roman&quot;; font-size: 18px;">What Should You Do?</span>
 </h2>
 <p style="line-height: 1.75em;">
-    <span style="font-family: &quot;times new roman&quot;;">a</span>
+    <span style="font-family: &quot;times new roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;Only&nbsp;use inheritance on interfaces and data structures. When duplication in code occurs, use scoped functions or create another class to reduce the duplication. Divide a bigger class into smaller logical, reusable components. For example, for a university system that ought to track user&#39;s information, create data structure for TA, student, and Professor, etc. Then, based on the need of the system, create interfaces. Based on the job that each interface offers, divide them into smaller components, and figure the basic, reusable components such as &quot;findFrom&quot;, &quot;deleteFrom&quot;, &quot;replaceFrom&quot;, &quot;getWagesFrom&quot;. Then, based on those components, create more advanced functions such as &quot;removeDuplicate&quot;, &quot;lowerAllWages&quot;, etc. (Such programming design is called Functional Programming, learn about it!). Don&#39;t limit yourself with specific programming design, when one design practice does not work, figure out why and come up with a better one. Rather than trap yourself in OOP and invent some workaround or fancy terms everytime it fails to work.</span>
+</p>
+<p style="line-height: 1.75em; text-align: center;">
+    <span style="font-family: &quot;times new roman&quot;;">Happy programming!&nbsp;</span>
 </p>
