@@ -1,1 +1,3 @@
-# Andrew-s-Programming-Blog
+# Andrew-s Mind Repository
+
+Merged with my algorithm land!

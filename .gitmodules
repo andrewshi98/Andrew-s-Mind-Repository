@@ -1,0 +1,3 @@
+[submodule "AlgorithmLand"]
+	path = AlgorithmLand
+	url = git@github.com:andrewshi98/AlgorithmLand.git
